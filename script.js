@@ -149,6 +149,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                 'fibonacci(8) = 21\n' +
                                 'fibonacci(9) = 34';
                         break;
+                    case 'code1':
+                        output = '¡Hola, Dart!';
+                        break;
                     // Añadir más casos según sea necesario para cada ejemplo de código
                     default:
                         output = 'Código ejecutado correctamente';
