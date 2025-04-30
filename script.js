@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Iniciar con el hash de la URL o la primera sección
+    // Iniciar con el hash de la URL o la primera sección si no hay hash
     const initialSection = window.location.hash.substring(1) || 'intro';
     const initialLink = document.querySelector(`#sidebar-nav .nav-link[data-section="${initialSection}"]`);
     if (initialLink) {
