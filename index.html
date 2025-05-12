@@ -3491,9 +3491,28 @@ flutter run -d iPhone</code></pre>
                                         <div class="card h-100">
                                             <div class="card-header">
                                                 <h5>Resultado</h5>
-                                            </div>
-                                            <div class="card-body text-center">
-                                                <img src="https://docs.flutter.dev/assets/images/docs/development/ui/layout/hello-world-screenshot.png" alt="Resultado de la app Flutter" class="img-fluid" style="max-height: 400px;">
+                                            </div>                                            <div class="card-body text-center">                                                
+                                                <div class="code-container">
+                                                    <pre><code class="language-dart" style="display: none;">
+void main() {
+    print('Simulación del Widget Counter');
+}
+</code></pre>                                                    <button class="btn btn-success run-code-btn mb-3" data-code-id="flutter-counter">
+                                                        <i class="bi bi-play-fill"></i> Ver resultado
+                                                    </button>
+                                                    <div class="output-container mt-2 d-none">
+                                                        <div class="output-header">
+                                                            <span>Resultado:</span>
+                                                            <button class="btn btn-sm btn-link clear-output-btn">Limpiar</button>
+                                                        </div>
+                                                        <div class="output"></div>
+                                                        <div class="mt-3 position-relative" style="height: 50px;">
+                                                            <button class="btn btn-primary rounded-circle position-absolute" style="bottom: 0; right: 0; width: 50px; height: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" id="flutter-fab">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <p class="mt-3">La aplicación muestra un contador que aumenta cada vez que presionas el botón flotante.</p>
                                             </div>
                                         </div>
@@ -3542,7 +3561,21 @@ flutter run -d iPhone</code></pre>
                                         <h5>Árbol de Widgets</h5>
                                         <p>Las aplicaciones Flutter están organizadas como un árbol de widgets anidados:</p>
                                         <div class="text-center mb-3">
-                                            <img src="https://docs.flutter.dev/assets/images/docs/development/ui/layout/sample-flutter-layout.png" alt="Árbol de widgets" class="img-fluid" style="max-height: 300px;">
+                                            <pre class="text-center" style="line-height: 1.2; font-family: monospace; background-color: #f8f9fa; padding: 1rem;">
+MaterialApp
+    └── Scaffold
+        ├── AppBar
+        │   └── Text("Título")
+        ├── Body
+        │   └── Center
+        │       └── Column
+        │           ├── Text
+        │           ├── Icon
+        │           └── Container
+        │               └── Text
+        └── FloatingActionButton
+            └── Icon("+")
+</pre>
                                         </div>
                                     </div>
                                 </div>
